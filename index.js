@@ -2,14 +2,47 @@
 const task = document.getElementById("input");
 const list = document.getElementById("list");
 
+let taskCount = 0;
+
 function addtask(){
+
+    taskCount++
+
     const newTag = document.createElement("li");
 
     const content = task.value;
 
+    const deleteButton = document.createElement("button");
+
     newTag.textContent = content;
+    newTag.classList.add("list-item");
+    newTag.id = "item-" + taskCount;
 
-    list.appendChild(newTag);
+    deleteButton.textContent = "X";
+    deleteButton.classList.add("delete-btn");
+    deleteButton.id = "deleteBtn-" + taskCount;
 
+    newTag.appendChild(deleteButton);
+
+    // deleteButton.onclick(deleteTask());
+
+    // deleteTask(){
+
+    //     list.removeChild();
+
+
+    // }
+
+
+    
+    
+
+    if (content == "") {
+        console.log("error-empty string");
+    } else {
+        list.appendChild(newTag);
+    }
+
+    // list.appendChild(newTag);
 }
 
