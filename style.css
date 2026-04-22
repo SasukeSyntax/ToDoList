@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #FFDFB9;
+}
+
+#body {
+    display: flex;
+    justify-content: first baseline;
+    align-items: flex-start;
+    height: 80%;
+    width: 50%;
+    background-color: #A4193D;
+    overflow: hidden;
+
+    border-radius: 2rem;
+}
+
+input {
+    width: 100rem;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-family: "Crafty Girls", cursive;
+    font-weight: bold;
+    border: none;
+    background-color: #A4193D;
+    color: white;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 1rem;
+
+    background-color: #FFDFB9;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "DynaPuff", system-ui;
+
+    cursor: pointer;
+
+   
+   width: 8%;
+   padding: 20px;
+   margin-left: 10px;
+   margin-top: 10px;
+}
+
