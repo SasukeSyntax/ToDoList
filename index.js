@@ -24,24 +24,25 @@ function addtask(){
 
     newTag.appendChild(deleteButton);
 
-    // deleteButton.onclick(deleteTask());
-
-    // deleteTask(){
-
-    //     list.removeChild();
-
-
-    // }   
-
-
-    
-    
 
     if (content == "") {
         console.log("error-empty string");
     } else {
         list.appendChild(newTag);
     }
+
+
+
+
+    // deleteButton.onclick(deleteTask()); 
+
+    deleteButton.addEventListener("click", function deleteTask(){
+        newTag.remove();
+    })
+
+    // newTag.appendChild(deleteButton);
+
+
 
     // list.appendChild(newTag);
 }
