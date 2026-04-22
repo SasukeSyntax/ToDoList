@@ -4,6 +4,14 @@ const list = document.getElementById("list");
 
 let taskCount = 0;
 
+task.addEventListener("keypress", function(event){
+        if (event.key === "Enter"){
+            addtask();
+        }
+    })
+
+
+
 function addtask(){
 
     taskCount++
@@ -13,6 +21,7 @@ function addtask(){
     const content = task.value;
 
     const deleteButton = document.createElement("button");
+
 
     newTag.textContent = content;
     newTag.classList.add("list-item");
@@ -32,8 +41,6 @@ function addtask(){
     }
 
 
-
-
     // deleteButton.onclick(deleteTask()); 
 
     deleteButton.addEventListener("click", function deleteTask(){
@@ -46,4 +53,5 @@ function addtask(){
 
     // list.appendChild(newTag);
 }
+
 
