@@ -10,6 +10,8 @@ body {
     align-items: center;
     height: 90vh;
     background-color: #FFDFB9;
+    /* overflow-y: scroll;
+    height: auto; */
 }
 
 #body {
@@ -17,7 +19,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start; */
     height: auto;
-    width: 50%;
+    width: 70%;
     background-color: #A4193D;
     overflow: hidden;
 

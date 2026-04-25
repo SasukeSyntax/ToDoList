@@ -4,12 +4,19 @@ const list = document.getElementById("list");
 
 let taskCount = 0;
 
+// list.addEventListener("keypress", function(event)){
+//     if (event.key === "Del"){
+//         deleteTask();
+//     }
+// }
+
+// did not work :(
+
 task.addEventListener("keypress", function(event){
         if (event.key === "Enter"){
             addtask();
         }
     })
-
 
 
 function addtask(){
@@ -89,3 +96,5 @@ window.onload = function() {
         });
     }
 }
+
+
